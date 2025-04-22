@@ -141,7 +141,9 @@
   <!-- Contact -->
   <section id="contact" class="py-16 bg-gray-100 px-4">
     <h2 class="text-3xl font-playfair font-semibold text-center mb-10">Let's Talk</h2>
-    <form class="max-w-xl mx-auto bg-[#FAF9F7] p-6 rounded shadow" onsubmit="return validateForm()">
+   
+    <form action="https://formspree.io/f/meogqjbp" method="POST" class="max-w-xl mx-auto bg-[#FAF9F7] p-6 rounded shadow">
+
       <div class="mb-4">
         <label class="block mb-1 font-semibold">Name</label>
         <input type="text" id="name" class="w-full border border-gray-300 px-3 py-2 rounded" required>
@@ -172,13 +174,6 @@
     </div>
     <p class="text-sm text-[#8D8D8D]">&copy; 2025 Bharti Sharma. All rights reserved.</p>
   </footer>
-
-  <script>
-    function validateForm() {
-      alert("Thanks! Your message has been sent.");
-      return false;
-    }
-  </script>
 <!-- Sticky Call/WhatsApp Button -->
   <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
     <a href="tel:+971502295179" class="bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-4 py-3 rounded-full shadow-lg text-sm font-semibold flex items-center gap-2">
