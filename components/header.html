@@ -1,19 +1,77 @@
-<header class="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-50">
-  <div class="flex items-center gap-3">
-    <img src="assets/images/bharti.jpeg" alt="Bharti Sharma" class="w-10 h-10 rounded-full object-cover">
-    <span class="text-lg font-semibold text-[#2C2C2C]">Bharti Sharma</span>
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo & Name -->
+    <div class="flex items-center gap-3">
+      <img src="assets/images/bharti.jpeg" alt="Bharti Sharma" class="w-10 h-10 rounded-full object-cover">
+      <span class="text-lg font-semibold text-[#2C2C2C]">Bharti Sharma</span>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuToggle" class="md:hidden text-[#2C2C2C] focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav & Language (Desktop) -->
+    <div class="hidden md:flex items-center gap-6">
+      <nav class="flex gap-4 text-sm font-medium">
+        <a href="index.html" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="home">Home</a>
+        <a href="#featured" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="properties">Properties</a>
+        <a href="#contact" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="contact">Contact</a>
+        <a href="#blog" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="blog">Blog</a>
+      </nav>
+      <select id="langSelector" class="text-[#BFA77F] border border-[#BFA77F] px-2 py-1 rounded text-xs">
+        <option value="en" selected>EN</option>
+        <option value="ar">عربي</option>
+        <option value="fr">FR</option>
+        <option value="ru">РУ</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
   </div>
-  <nav class="flex gap-4 text-sm font-medium">
-    <a href="index.html" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="home">Home</a>
-    <a href="#featured" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="properties">Properties</a>
-    <a href="#contact" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="contact">Contact</a>
-    <a href="#blog" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="blog">Blog</a>
-  </nav>
-  <select id="langSelector" class="text-[#BFA77F] border border-[#BFA77F] px-2 py-1 rounded text-xs">
-    <option value="en" selected>EN</option>
-    <option value="ar">عربي</option>
-    <option value="fr">FR</option>
-    <option value="ru">РУ</option>
-    <option value="zh">中文</option>
-  </select>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+    <nav class="flex flex-col text-sm font-medium gap-2">
+      <a href="index.html" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="home">Home</a>
+      <a href="#featured" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="properties">Properties</a>
+      <a href="#contact" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="contact">Contact</a>
+      <a href="#blog" class="text-[#2C2C2C] hover:text-[#BFA77F]" data-i18n="blog">Blog</a>
+    </nav>
+    <div class="mt-2">
+      <select id="langSelectorMobile" class="w-full text-[#BFA77F] border border-[#BFA77F] px-2 py-1 rounded text-xs">
+        <option value="en" selected>EN</option>
+        <option value="ar">عربي</option>
+        <option value="fr">FR</option>
+        <option value="ru">РУ</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("mobileMenu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      const mainSelector = document.getElementById("langSelector");
+      const mobileSelector = document.getElementById("langSelectorMobile");
+
+      if (mainSelector && mobileSelector) {
+        mainSelector.addEventListener("change", () => {
+          mobileSelector.value = mainSelector.value;
+          mainSelector.dispatchEvent(new Event("change"));
+        });
+        mobileSelector.addEventListener("change", () => {
+          mainSelector.value = mobileSelector.value;
+          mobileSelector.dispatchEvent(new Event("change"));
+        });
+      }
+    });
+  </script>
 </header>
