@@ -10,6 +10,8 @@ Promise.all(components.map(id =>
       document.getElementById(id).innerHTML = html;
     })
 )).then(() => {
-  // Now run translation after all components are loaded
-  initLanguageSwitcher();
+  // Call language switcher after components are loaded
+  if (typeof initLanguageSwitcher === 'function') {
+    initLanguageSwitcher();
+  }
 });
