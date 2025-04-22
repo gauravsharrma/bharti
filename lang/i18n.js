@@ -1,5 +1,6 @@
 function initLanguageSwitcher() {
-  const langSelector = document.getElementById('langSelector');
+  const desktopLang = document.getElementById('langSelector');
+  const mobileLang = document.getElementById('langSelectorMobile');
 
   const i18nMap = {
     home: { en: "Home", ar: "الرئيسية", fr: "Accueil", ru: "Главная", zh: "首页" },
@@ -37,15 +38,30 @@ function initLanguageSwitcher() {
     }
   };
 
-  if (!langSelector) return;
-
-  langSelector.addEventListener("change", () => {
-    const lang = langSelector.value;
+  function applyTranslation(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
       if (i18nMap[key] && i18nMap[key][lang]) {
         el.textContent = i18nMap[key][lang];
       }
     });
-  });
+  }
+
+  function syncLangSelect(from, to) {
+    if (from && to) {
+      from.addEventListener("change", () => {
+        to.value = from.value;
+        applyTranslation(from.value);
+      });
+    }
+  }
+
+  if (desktopLang && mobileLang) {
+    syncLangSelect(desktopLang, mobileLang);
+    syncLangSelect(mobileLang, desktopLang);
+    applyTranslation(desktopLang.value); // initial run
+  } else if (desktopLang) {
+    desktopLang.addEventListener("change", () => applyTranslation(desktopLang.value));
+    applyTranslation(desktopLang.value);
+  }
 }
