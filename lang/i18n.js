@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initLanguageSwitcher() {
   const langSelector = document.getElementById('langSelector');
 
   const i18nMap = {
@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     contact: { en: "Let's Talk", ar: "دعنا نتحدث", fr: "Parlons-en", ru: "Давайте обсудим", zh: "让我们交流" }
   };
 
-  langSelector?.addEventListener("change", () => {
+  if (!langSelector) return;
+
+  langSelector.addEventListener("change", () => {
     const lang = langSelector.value;
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
@@ -19,4 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-});
+}
