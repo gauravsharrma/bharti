@@ -312,25 +312,7 @@
   }
 </script>
 <script>
-  const langSelector = document.getElementById('langSelector');
-  langSelector.addEventListener('change', () => {
-    const selectedLang = langSelector.value;
-    document.documentElement.lang = selectedLang;
-    document.body.dir = selectedLang === 'ar' ? 'rtl' : 'ltr';
-    document.body.classList.toggle('rtl', selectedLang === 'ar');
-
-    const banner = document.getElementById('welcomeBanner');
-    const greetings = {
-      en: 'Welcome! Explore premium Dubai properties with Bharti Sharma.',
-      ar: 'مرحبًا! استكشف العقارات الفاخرة في دبي مع بهارتي شارما.',
-      fr: 'Bienvenue ! Découvrez les propriétés de luxe à Dubaï avec Bharti Sharma.',
-      ru: 'Добро пожаловать! Изучите элитную недвижимость в Дубае с Бхарти Шармой.',
-      zh: '欢迎！与 Bharti Sharma 一起探索迪拜高端房产。'
-    };
-    banner.textContent = greetings[selectedLang];
-    banner.classList.remove('hidden');
-  });
-  });
+const langSelector = document.getElementById('langSelector');
 // Multilingual section heading translator
 const i18nMap = {
   meet: {
@@ -387,6 +369,7 @@ langSelector.addEventListener('change', () => {
   });
 });
 const translatable = {
+  // form + button translations
   brochure: {
     en: "📄 Download Property Brochure", ar: "📄 تحميل كتيب العقار", fr: "📄 Télécharger la brochure", ru: "📄 Скачать брошюру", zh: "📄 下载房产手册"
   },
@@ -398,7 +381,7 @@ const translatable = {
   },
   getDirections: {
     en: "📍 Get Directions", ar: "📍 احصل على الاتجاهات", fr: "📍 Itinéraire", ru: "📍 Проложить маршрут", zh: "📍 获取路线"
-  }
+  },
   name: {
     en: "Name", ar: "الاسم", fr: "Nom", ru: "Имя", zh: "姓名"
   },
