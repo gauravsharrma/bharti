@@ -211,6 +211,7 @@
     <a href="https://wa.me/971502295179" class="text-[#BFA77F]" target="_blank">WhatsApp</a>
   </div>
   <div class="text-sm text-[#8D8D8D] space-x-4">
+    <a href="buyer-guide.pdf" download class="hover:underline">📘 Buyer Guide</a>
     <a href="#legal" class="hover:underline">Terms</a>
     <a href="#legal" class="hover:underline">Privacy</a>
     <a href="brochure.pdf" download class="hover:underline">📄 Brochure</a>
@@ -262,5 +263,46 @@
   });
 </script>
   <a href="#" class="fixed bottom-4 left-4 bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-3 py-2 rounded-full shadow-lg text-xs font-semibold z-50">⬆ Back to Top</a>
+<div id="popupOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden justify-center items-center">
+  <div class="bg-white max-w-md w-full rounded-lg p-6 shadow-lg relative animate-fade-in">
+    <button onclick="document.getElementById('popupOverlay').classList.add('hidden')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+    <h3 class="text-xl font-bold mb-4">Get Your Free Buyer Guide</h3>
+    <p class="mb-4">Enter your email to instantly download the Dubai Property Buyer Guide curated by Bharti Sharma.</p>
+    <form action="https://formspree.io/f/meogqjbp" method="POST" onsubmit="return handlePopupSubmit(event)">
+      <input type="email" name="email" required placeholder="Your email" class="w-full border border-gray-300 px-3 py-2 rounded mb-4">
+      <button type="submit" class="bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-4 py-2 rounded w-full">Download Guide</button>
+    </form>
+    <p id="popupThankYou" class="hidden text-green-600 font-semibold mt-4">Thank you! Your Buyer Guide download will begin shortly.</p>
+<a id="autoDownloadLink" href="buyer-guide.pdf" download class="hidden">Download</a>
+  </div>
+</div>
+<script>
+  let popupShown = false;
+  window.addEventListener('scroll', () => {
+    if (!popupShown && window.scrollY > 800) {
+      document.getElementById('popupOverlay').classList.remove('hidden');
+      popupShown = true;
+    }
+  });
+  function handlePopupSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.classList.add('hidden');
+        document.getElementById('popupThankYou').classList.remove('hidden');
+        document.getElementById('autoDownloadLink').click();
+      } else {
+        alert("Error submitting form. Please try again later.");
+      }
+    });
+    return false;
+  }
+</script>
 </body>
 </html>
