@@ -3,8 +3,13 @@ const components = [
   "why", "testimonials", "map", "blog", "contact", "footer"
 ];
 
-components.forEach(async (id) => {
-  const res = await fetch(`components/${id}.html`);
-  const html = await res.text();
-  document.getElementById(id).innerHTML = html;
+Promise.all(components.map(id =>
+  fetch(`components/${id}.html`)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+    })
+)).then(() => {
+  // Now run translation after all components are loaded
+  initLanguageSwitcher();
 });
