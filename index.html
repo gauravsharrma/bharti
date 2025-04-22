@@ -413,7 +413,7 @@ langSelector.addEventListener('change', () => {
   document.querySelector('[for=phone]')?.textContent = translatable.phone[lang];
   document.querySelector('[for=message]')?.textContent = translatable.message[lang];
   document.querySelector('button[type=submit]')?.textContent = translatable.sendBtn[lang];
-  document.getElementById('thankYouMessage')?.textContent = translatable.thankYou[lang];
+  if (document.getElementById('thankYouMessage')) document.getElementById('thankYouMessage').textContent = translatable.thankYou[lang];
   document.querySelector('a[href="brochure.pdf"]')?.textContent = translatable.brochure[lang];
   document.querySelector('a[href="buyer-guide.pdf"]')?.textContent = translatable.buyerGuide[lang];
   document.querySelector('a[href^="tel:"]')?.textContent = translatable.callNow[lang];
