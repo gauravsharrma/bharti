@@ -196,15 +196,18 @@ function initLanguageSwitcher() {
       }
     });
   }
-
+  
   function syncLangSelect(from, to) {
     if (from && to) {
       from.addEventListener("change", () => {
-        to.value = from.value;
+        if (to.value !== from.value) {
+          to.value = from.value; // only update if values differ
+        }
         applyTranslation(from.value);
       });
     }
   }
+
 
   if (desktopLang && mobileLang) {
     syncLangSelect(desktopLang, mobileLang);
