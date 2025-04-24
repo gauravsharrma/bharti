@@ -35,6 +35,20 @@ function initLanguageSwitcher() {
     },
     getDirections: {
       en: "📍 Get Directions", ar: "📍 احصل على الاتجاهات", fr: "📍 Itinéraire", ru: "📍 Проложить маршрут", zh: "📍 获取路线"
+    },
+    aboutHeading: {
+      en: "Meet Bharti Sharma",
+      ar: "تعرف على بهارتي شارما",
+      fr: "Rencontrez Bharti Sharma",
+      ru: "Познакомьтесь с Бхарти Шармой",
+      zh: "认识 Bharti Sharma",
+    },
+    aboutContent: {
+      en: "Helping homebuyers and investors discover premium Dubai properties with transparency, zero commission, and unmatched local insights.",
+      ar: "مساعدة المشترين والمستثمرين في العثور على عقارات فاخرة في دبي بشفافية وبدون عمولة وبخبرة محلية لا مثيل لها.",
+      fr: "Aide les acheteurs et investisseurs à découvrir des biens immobiliers haut de gamme à Dubaï avec transparence, sans commission et avec une expertise locale inégalée.",
+      ru: "Помогает покупателям и инвесторам находить элитную недвижимость в Дубае с прозрачностью, без комиссии и с непревзойденным знанием местного рынка.",
+      zh: "协助购房者和投资者以透明、公正、零佣金的方式发现迪拜优质房产，具备无与伦比的本地见解。",
     }
   };
 
