@@ -72,11 +72,11 @@ function initLanguageSwitcher() {
       zh: "Reportage Hills 联排别墅（3/4/5居）起价 2.6M",
     },
     property3: {
-      en: "Taromina Village 3, 4, 5 Bed Townhouses. Starting price – 3.2M",
-      ar: "تاون هاوس 3، 4 و5 غرف في قرية تارومينا. السعر يبدأ من 3.2 مليون",
-      fr: "Maisons de ville Taromina Village 3, 4, 5 chambres. Prix à partir de 3.2M",
-      ru: "Таунхаусы Taromina Village 3, 4 и 5 спален. От 3.2 млн AED",
-      zh: "Taromina Village 联排别墅（3/4/5居）起价 3.2M",
+      en: "Taormina Village 3, 4, 5 Bed Townhouses. Starting price – 3.2M",
+      ar: "تاون هاوس 3، 4 و5 غرف في قرية تاورمينا. السعر يبدأ من 3.2 مليون",
+      fr: "Maisons de ville Taormina Village 3, 4, 5 chambres. Prix à partir de 3.2M",
+      ru: "Таунхаусы Taormina Village 3, 4 и 5 спален. От 3.2 млн AED",
+      zh: "Taormina Village 联排别墅（3/4/5居）起价 3.2M",
     }
   };
 
