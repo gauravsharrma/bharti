@@ -116,6 +116,7 @@ function initLanguageSwitcher() {
       ru: "Что говорят наши клиенты",
       zh: "客户怎么说",
     },
+    
     testimonial1: {
       en: "Bharti made the entire process seamless and stress-free!",
       ar: "بهارتي جعلت العملية برمتها سهلة وخالية من التوتر!",
@@ -123,6 +124,7 @@ function initLanguageSwitcher() {
       ru: "Бхарти сделала весь процесс простым и без стресса!",
       zh: "Bharti 让整个过程顺畅而无忧！",
     },
+    
     testimonial2: {
       en: "Truly the best property advisor in Dubai.",
       ar: "بالفعل أفضل مستشارة عقارية في دبي.",
@@ -130,6 +132,15 @@ function initLanguageSwitcher() {
       ru: "Действительно лучший консультант по недвижимости в Дубае.",
       zh: "确实是迪拜最好的房地产顾问。",
     },
+    
+    testimonial3: {
+      en: "Professional, responsive, and helped us find the perfect family home.",
+      ar: "محترفة، ومتجاوبة، وساعدتنا في العثور على منزل عائلي مثالي.",
+      fr: "Professionnelle, réactive, et nous a aidés à trouver la maison idéale.",
+      ru: "Профессионально, оперативно, помогла найти идеальный дом для семьи.",
+      zh: "专业、响应迅速，帮我们找到了理想的家庭住宅。",
+    },
+
     
     // Map Section (optional)
     mapHeading: {
