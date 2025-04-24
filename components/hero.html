@@ -1,13 +1,33 @@
-<section class="bg-cover bg-center text-white h-screen flex flex-col justify-center items-center text-center px-4" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop');">
-  <div class="bg-black bg-opacity-60 p-8 rounded-lg animate-fade-in shadow-xl">
-    <h1 data-i18n="heroHeading" class="text-4xl md:text-6xl font-extrabold mb-4 text-[#EAD9C3] animate-slide-up">Luxury Dubai Properties with Up to 40% Off</h1>
-    <p data-i18n="heroSubheading" class="text-xl mb-6 text-gray-100 animate-fade-in delay-100">Work directly with Bharti Sharma – Your trusted Reportage Properties agent in Dubai</p>
-    <div class="flex gap-4 justify-center">
-      <a href="tel:+971502295179" data-i18n="callNow" class="bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-4 py-3 rounded-full shadow-lg text-sm font-semibold flex items-center gap-2">📞 Call Now</a>
-      <a href="https://wa.me/971502295179" data-i18n="whatsapp" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded font-semibold">💬 WhatsApp</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Properties - Hero</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="i18n.js"></script>
+</head>
+<body>
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <h1 id="hero-heading"></h1>
+      <p id="hero-subheading"></p>
+      <div class="hero-buttons">
+        <a href="tel:+971502295179" class="btn call-now" id="callNowBtn"></a>
+        <a href="https://wa.me/971502295179" class="btn whatsapp" id="whatsappBtn"></a>
+        <a href="https://maps.google.com/?q=Reportage+Properties+Dubai" class="btn directions" id="directionsBtn"></a>
+      </div>
     </div>
-  </div>
-  <div class="text-center mt-6">
-    <a href="https://maps.app.goo.gl/fapSAJi2PTxkGAJZ7" target="_blank" data-i18n="getDirections" class="inline-block bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-6 py-3 rounded font-semibold shadow">📍 Get Directions</a>
-  </div>
-</section>
+  </section>
+
+  <script>
+    const lang = 'en'; // replace with dynamic language detection if needed
+
+    document.getElementById('hero-heading').innerText = i18n.contact.heroHeading[lang];
+    document.getElementById('hero-subheading').innerText = i18n.contact.heroSubheading[lang];
+    document.getElementById('callNowBtn').innerText = i18n.contact.callNow[lang];
+    document.getElementById('whatsappBtn').innerText = i18n.contact.whatsapp[lang];
+    document.getElementById('directionsBtn').innerText = i18n.contact.getDirections[lang];
+  </script>
+</body>
+</html>
