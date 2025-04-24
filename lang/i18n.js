@@ -49,6 +49,34 @@ function initLanguageSwitcher() {
       fr: "Aide les acheteurs et investisseurs à découvrir des biens immobiliers haut de gamme à Dubaï avec transparence, sans commission et avec une expertise locale inégalée.",
       ru: "Помогает покупателям и инвесторам находить элитную недвижимость в Дубае с прозрачностью, без комиссии и с непревзойденным знанием местного рынка.",
       zh: "协助购房者和投资者以透明、公正、零佣金的方式发现迪拜优质房产，具备无与伦比的本地见解。",
+    },
+    featuredHeading: {
+      en: "Featured Properties",
+      ar: "عقارات مميزة",
+      fr: "Propriétés en vedette",
+      ru: "Избранные объекты",
+      zh: "精选房源",
+    },
+    property1: {
+      en: "Verdana 1 bed starting price 930,000 AED",
+      ar: "شقة بغرفة نوم واحدة في فيردانا بسعر يبدأ من 930,000 درهم",
+      fr: "Verdana 1 chambre à partir de 930 000 AED",
+      ru: "Verdana, 1 спальня — от 930 000 AED",
+      zh: "Verdana 一居室起价 930,000 迪拉姆",
+    },
+    property2: {
+      en: "Reportage Hills 3, 4 & 5 Bed Townhouses. Starting price – 2.6M",
+      ar: "تاون هاوس 3، 4 و5 غرف في ريبورتاج هيلز. السعر يبدأ من 2.6 مليون",
+      fr: "Maisons de ville Reportage Hills 3, 4 et 5 chambres. Prix à partir de 2.6M",
+      ru: "Таунхаусы Reportage Hills 3, 4 и 5 спален. От 2.6 млн AED",
+      zh: "Reportage Hills 联排别墅（3/4/5居）起价 2.6M",
+    },
+    property3: {
+      en: "Taromina Village 3, 4, 5 Bed Townhouses. Starting price – 3.2M",
+      ar: "تاون هاوس 3، 4 و5 غرف في قرية تارومينا. السعر يبدأ من 3.2 مليون",
+      fr: "Maisons de ville Taromina Village 3, 4, 5 chambres. Prix à partir de 3.2M",
+      ru: "Таунхаусы Taromina Village 3, 4 и 5 спален. От 3.2 млн AED",
+      zh: "Taromina Village 联排别墅（3/4/5居）起价 3.2M",
     }
   };
 
