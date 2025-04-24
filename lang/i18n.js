@@ -77,7 +77,115 @@ function initLanguageSwitcher() {
       fr: "Maisons de ville Taormina Village 3, 4, 5 chambres. Prix à partir de 3.2M",
       ru: "Таунхаусы Taormina Village 3, 4 и 5 спален. От 3.2 млн AED",
       zh: "Taormina Village 联排别墅（3/4/5居）起价 3.2M",
+    },
+    // Why Section
+    whyHeading: {
+      en: "Why Choose Bharti Sharma?",
+      ar: "لماذا تختار بهارتي شارما؟",
+      fr: "Pourquoi choisir Bharti Sharma ?",
+      ru: "Почему выбирают Бхарти Шарму?",
+      zh: "为什么选择 Bharti Sharma？",
+    },
+    whyPoint1: {
+      en: "Zero commission on all Reportage Properties",
+      ar: "بدون عمولة على جميع عقارات ريبورتاج",
+      fr: "Zéro commission sur toutes les propriétés Reportage",
+      ru: "Без комиссии на все объекты Reportage",
+      zh: "所有 Reportage 房产零佣金",
+    },
+    whyPoint2: {
+      en: "Trusted guidance throughout your property journey",
+      ar: "إرشاد موثوق طوال رحلتك العقارية",
+      fr: "Conseils fiables tout au long de votre parcours immobilier",
+      ru: "Надежное сопровождение на каждом этапе покупки",
+      zh: "购房旅程全程值得信赖的指导",
+    },
+    whyPoint3: {
+      en: "Access to exclusive investment-ready listings",
+      ar: "الوصول إلى قوائم استثمارية حصرية جاهزة",
+      fr: "Accès à des biens d'investissement exclusifs",
+      ru: "Доступ к эксклюзивным инвестиционным объектам",
+      zh: "专属投资房源随时可入手",
+    },
+    
+    // Testimonials Section
+    testimonialsHeading: {
+      en: "What Our Clients Say",
+      ar: "ماذا يقول عملاؤنا؟",
+      fr: "Ce que disent nos clients",
+      ru: "Что говорят наши клиенты",
+      zh: "客户怎么说",
+    },
+    testimonial1: {
+      en: "Bharti made the entire process seamless and stress-free!",
+      ar: "بهارتي جعلت العملية برمتها سهلة وخالية من التوتر!",
+      fr: "Bharti a rendu tout le processus fluide et sans stress !",
+      ru: "Бхарти сделала весь процесс простым и без стресса!",
+      zh: "Bharti 让整个过程顺畅而无忧！",
+    },
+    testimonial2: {
+      en: "Truly the best property advisor in Dubai.",
+      ar: "بالفعل أفضل مستشارة عقارية في دبي.",
+      fr: "Véritablement la meilleure conseillère immobilière à Dubaï.",
+      ru: "Действительно лучший консультант по недвижимости в Дубае.",
+      zh: "确实是迪拜最好的房地产顾问。",
+    },
+    
+    // Map Section (optional)
+    mapHeading: {
+      en: "Visit Our Office",
+      ar: "زر مكتبنا",
+      fr: "Visitez notre bureau",
+      ru: "Посетите наш офис",
+      zh: "欢迎光临我们的办公室",
+    },
+    
+    // Blog Section
+    blogHeading: {
+      en: "Latest Blog Posts",
+      ar: "أحدث المقالات",
+      fr: "Derniers articles de blog",
+      ru: "Последние записи в блоге",
+      zh: "最新博客文章",
+    },
+    blogCTA: {
+      en: "Read More",
+      ar: "اقرأ المزيد",
+      fr: "Lire la suite",
+      ru: "Читать далее",
+      zh: "阅读更多",
+    },
+    
+    // Contact Section
+    contactHeading: {
+      en: "Get In Touch",
+      ar: "تواصل معنا",
+      fr: "Contactez-nous",
+      ru: "Свяжитесь с нами",
+      zh: "联系我们",
+    },
+    contactPhone: {
+      en: "Call Now",
+      ar: "اتصل الآن",
+      fr: "Appelez maintenant",
+      ru: "Позвонить сейчас",
+      zh: "立即致电",
+    },
+    contactWhatsApp: {
+      en: "Chat on WhatsApp",
+      ar: "الدردشة على واتساب",
+      fr: "Discuter sur WhatsApp",
+      ru: "Написать в WhatsApp",
+      zh: "WhatsApp 聊天",
+    },
+    contactDirections: {
+      en: "Get Directions",
+      ar: "الحصول على الاتجاهات",
+      fr: "Obtenir l'itinéraire",
+      ru: "Проложить маршрут",
+      zh: "获取路线",
     }
+
   };
 
   function applyTranslation(lang) {
