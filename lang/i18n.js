@@ -14,11 +14,11 @@ function initLanguageSwitcher() {
     blog: { en: "Latest Blog Posts", ar: "أحدث المقالات", fr: "Derniers articles", ru: "Последние статьи", zh: "最新博客" },
     contact: { en: "Let's Talk", ar: "دعنا نتحدث", fr: "Parlons-en", ru: "Давайте обсудим", zh: "让我们交流" },
     heroHeading: {
-      en: "Luxury Dubai Properties with Up to 40% Off",
-      ar: "عقارات فاخرة في دبي بخصم يصل إلى 40%",
-      fr: "Propriétés de luxe à Dubaï avec jusqu'à 40% de réduction",
-      ru: "Роскошная недвижимость в Дубае со скидкой до 40%",
-      zh: "迪拜豪华房产，最高可享 40% 折扣"
+      en: "Zero Commission. Trusted Guidance. No Hassles. Just Smart Property Moves.",
+      ar: "بدون عمولة. إرشاد موثوق. بدون متاعب. فقط خطوات عقارية ذكية.",
+      fr: "Zéro commission. Conseils fiables. Sans tracas. Juste des choix malins.",
+      ru: "Без комиссии. Надежное руководство. Никаких хлопот. Только умные сделки.",
+      zh: "零佣金。值得信赖的指导。无烦恼。尽享智能置业。",
     },
     heroSubheading: {
       en: "Work directly with Bharti Sharma – Your trusted Reportage Properties agent in Dubai",
