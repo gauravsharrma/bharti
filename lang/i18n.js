@@ -21,11 +21,11 @@ function initLanguageSwitcher() {
       zh: "零佣金。值得信赖的指导。无烦恼。尽享智能置业。",
     },
     heroSubheading: {
-      en: "Work directly with Bharti Sharma – Your trusted Reportage Properties agent in Dubai",
-      ar: "تواصل مباشرة مع بهارتي شارما – وكيلك الموثوق من ريبورتاج العقارية في دبي",
-      fr: "Travaillez directement avec Bharti Sharma – Votre agent Reportage Properties de confiance à Dubaï",
-      ru: "Работайте напрямую с Бхарти Шармой – вашим надежным агентом Reportage в Дубае",
-      zh: "直接联系 Bharti Sharma – 您在迪拜值得信赖的 Reportage 房产代理"
+      en: "Work directly with Bharti Sharma – Your trusted Reportage Properties partner in Dubai",
+      ar: "تواصل مباشرة مع بهارتي شارما – شريكتك الموثوقة من ريبورتاج العقارية في دبي",
+      fr: "Travaillez directement avec Bharti Sharma – Votre partenaire Reportage Properties de confiance à Dubaï",
+      ru: "Работайте напрямую с Бхарти Шармой – вашим надежным партнёром от Reportage Properties в Дубае",
+      zh: "直接与 Bharti Sharma 合作 —— 您在迪拜值得信赖的 Reportage Properties 合作伙伴",
     },
     callNow: {
       en: "📞 Call Now", ar: "📞 اتصل الآن", fr: "📞 Appeler maintenant", ru: "📞 Позвонить", zh: "📞 立即致电"
