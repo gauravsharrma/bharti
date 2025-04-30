@@ -53,3 +53,19 @@ body {
   border-radius: 12px;
   text-align: center;
 }
+.campaign-cta {
+  text-align: center;
+  margin: 12px auto 30px;
+  font-size: 1.1rem;
+}
+
+.campaign-cta a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.campaign-cta a:hover {
+  text-decoration: underline;
+}
+
