@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brabus Island - Project Launch</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      color: #222;
       background: #f9f9f9;
+      color: #222;
     }
     header {
       background: #fff;
@@ -45,6 +44,35 @@
     }
     ul {
       padding-left: 1.2rem;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+    .carousel a {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+    }
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+      transition: transform 0.2s;
+    }
+    .carousel img:hover {
+      transform: scale(1.02);
+    }
+    @media (min-width: 600px) {
+      .carousel img {
+        max-width: 400px;
+      }
     }
     footer {
       text-align: center;
@@ -80,44 +108,26 @@
   <div class="hero">
     <img src="brabus-banner.jpg" alt="Brabus Island Banner">
   </div>
-<section class="section">
-  <h2>Interior Views</h2>
-  <div class="carousel">
-    <a href="i1.jpeg" target="_blank"><img src="i1.jpeg" alt="Interior 1" /></a>
-    <a href="i2.jpeg" target="_blank"><img src="i2.jpeg" alt="Interior 2" /></a>
-    <a href="i3.jpeg" target="_blank"><img src="i3.jpeg" alt="Interior 3" /></a>
-    <a href="i4.jpeg" target="_blank"><img src="i4.jpeg" alt="Interior 4" /></a>
-  </div>
-</section>
 
+  <section class="section">
+    <h2>Exterior Views</h2>
+    <div class="carousel">
+      <a href="e1.jpeg" target="_blank"><img src="e1.jpeg" alt="Exterior 1"></a>
+      <a href="e2.jpeg" target="_blank"><img src="e2.jpeg" alt="Exterior 2"></a>
+      <a href="e3.jpeg" target="_blank"><img src="e3.jpeg" alt="Exterior 3"></a>
+      <a href="e4.jpeg" target="_blank"><img src="e4.jpeg" alt="Exterior 4"></a>
+    </div>
+  </section>
 
-
-
-<style>
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding-bottom: 1rem;
-  }
-  .carousel img {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    scroll-snap-align: center;
-  }
-  @media (min-width: 600px) {
-    .carousel img {
-      max-width: 400px;
-    }
-  }
-</style>
-
+  <section class="section">
+    <h2>Interior Views</h2>
+    <div class="carousel">
+      <a href="i1.jpeg" target="_blank"><img src="i1.jpeg" alt="Interior 1"></a>
+      <a href="i2.jpeg" target="_blank"><img src="i2.jpeg" alt="Interior 2"></a>
+      <a href="i3.jpeg" target="_blank"><img src="i3.jpeg" alt="Interior 3"></a>
+      <a href="i4.jpeg" target="_blank"><img src="i4.jpeg" alt="Interior 4"></a>
+    </div>
+  </section>
 
   <section class="section">
     <h2>Unit Types and Prices</h2>
@@ -163,34 +173,6 @@
       <a href="tel:+971502295179">Call Now</a>
       <a href="https://wa.me/971502295179" class="whatsapp" target="_blank">WhatsApp</a>
     </div>
-
-
-
-<style>
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding-bottom: 1rem;
-  }
-  .carousel img {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    scroll-snap-align: center;
-  }
-  @media (min-width: 600px) {
-    .carousel img {
-      max-width: 400px;
-    }
-  }
-</style>
-
     <p style="margin-top: 1rem;">&copy; 2025 Reportage Properties · All rights reserved.</p>
   </footer>
 </body>
