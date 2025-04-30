@@ -6,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* Animations */
 .animate-fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
@@ -22,15 +23,21 @@ body {
 }
 
 @keyframes slideUp {
-  to { transform: translateY(0); opacity: 1; }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+/* Brabus Campaign Banner */
 .brabus-banner-link {
   position: relative;
   display: block;
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 16px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .brabus-banner {
@@ -40,19 +47,36 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
-.banner-title {
+.banner-overlay {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.55);
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 0 0 16px 16px;
   text-align: center;
 }
+
+.banner-overlay h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.banner-overlay .tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.banner-overlay .cta {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffe600;
+}
+
+/* CTA Below Banner (Optional) */
 .campaign-cta {
   text-align: center;
   margin: 12px auto 30px;
@@ -68,4 +92,3 @@ body {
 .campaign-cta a:hover {
   text-decoration: underline;
 }
-
