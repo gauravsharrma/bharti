@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brabus Island - Project Launch</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../styles.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -15,10 +15,11 @@
       color: #222;
       background: #f9f9f9;
     }
-    header, footer {
+    header {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: #fff;
     }
     .hero {
       max-width: 1200px;
@@ -45,14 +46,28 @@
     ul {
       padding-left: 1.2rem;
     }
-    .cta-button {
+    footer {
+      text-align: center;
+      background-color: #fff;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+    .footer-buttons {
+      margin-top: 1rem;
+    }
+    .footer-buttons a {
       display: inline-block;
-      padding: 0.8rem 1.5rem;
-      margin-top: 1.5rem;
-      background-color: #1a1a1a;
+      margin: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      background-color: #007bff;
       color: white;
-      border-radius: 6px;
       text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .footer-buttons a.whatsapp {
+      background-color: #25d366;
     }
   </style>
 </head>
@@ -63,8 +78,7 @@
   </header>
 
   <div class="hero">
-    <img src="brabus-banner.jpg" alt="Brabus Island Banner" class="brabus-banner">
-
+    <img src="brabus-banner.jpg" alt="Brabus Island Banner">
   </div>
 
   <section class="section">
@@ -103,11 +117,15 @@
   <section class="section">
     <h2>Reservation</h2>
     <p>Reserve your unit now with just <strong>AED 50,000</strong>.</p>
-    <a href="contact.html" class="cta-button">Book a Viewing</a>
   </section>
 
   <footer>
-    &copy; 2025 Reportage Properties · All rights reserved.
+    <p>Have questions? Reach out now:</p>
+    <div class="footer-buttons">
+      <a href="tel:+971502295179">Call Now</a>
+      <a href="https://wa.me/971502295179" class="whatsapp" target="_blank">WhatsApp</a>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 Reportage Properties · All rights reserved.</p>
   </footer>
 </body>
 </html>
