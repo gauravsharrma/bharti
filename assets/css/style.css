@@ -25,31 +25,31 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-  .brabus-banner-link {
-    display: block;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 16px;
-  }
+.brabus-banner-link {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
 
-  .brabus-banner {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
+.brabus-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
 
-  .brabus-banner:hover {
-    transform: scale(1.02);
-  }
-
-  @media (max-width: 768px) {
-    .brabus-banner-link {
-      padding: 0 12px;
-    }
-
-    .brabus-banner {
-      border-radius: 12px;
-    }
-  }
+.banner-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
