@@ -99,18 +99,7 @@
     }
   </style>
 </head>
-  <script>
-  function scrollImages(direction) {
-    const container = document.getElementById('carousel');
-    const scrollAmount = 320;
 
-    if (direction === 'left') {
-      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    } else {
-      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  }
-</script>
 
 <body>
   <header>
@@ -203,5 +192,17 @@
     </div>
     <p style="margin-top: 1rem;">&copy; 2025 Reportage Properties · All rights reserved.</p>
   </footer>
+    <script>
+  function scrollImages(direction) {
+    const container = document.getElementById('carousel');
+    const scrollAmount = 320;
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
+</script>
 </body>
 </html>
