@@ -114,14 +114,14 @@
   <section class="section">
     <h2>Exterior Views</h2>
     <div class="image-carousel-container">
-      <button class="arrow left" onclick="scrollImages('left')">&#10094;</button>
-      <div class="image-carousel" id="carousel">
+      <button class="arrow left" onclick="scrollImages('left', 'carousel_exterior')">&#10094;</button>
+      <div class="image-carousel" id="carousel_exterior">
         <img src="e2.jpeg" alt="Exterior View 1">
         <img src="e1.jpeg" alt="Exterior View 2">
         <img src="e3.jpeg" alt="Exterior View 3">
         <img src="e4.jpeg" alt="Exterior View 3">
       </div>
-      <button class="arrow right" onclick="scrollImages('right')">&#10095;</button>
+      <button class="arrow right" onclick="scrollImages('right', 'carousel_exterior')">&#10095;</button>
     </div>
   </section>
 
@@ -130,14 +130,14 @@
   <section class="section">
     <h2>Interior Views</h2>
     <div class="image-carousel-container">
-      <button class="arrow left" onclick="scrollImages('left')">&#10094;</button>
-      <div class="image-carousel" id="carousel">
+    <button class="arrow left" onclick="scrollImages('left', 'carousel_interior')">&#10094;</button>
+      <div class="image-carousel" id="carousel_interior">
         <img src="i2.jpeg" alt="Interior View 1">
         <img src="i1.jpeg" alt="Interior View 2">
         <img src="i3.jpeg" alt="Interior View 3">
         <img src="i4.jpeg" alt="Interior View 3">
       </div>
-      <button class="arrow right" onclick="scrollImages('right')">&#10095;</button>
+    <button class="arrow right" onclick="scrollImages('right', 'carousel_interior')">&#10095;</button>
     </div>
   </section>
 
@@ -192,9 +192,9 @@
     </div>
     <p style="margin-top: 1rem;">&copy; 2025 Reportage Properties · All rights reserved.</p>
   </footer>
-    <script>
-  function scrollImages(direction) {
-    const container = document.getElementById('carousel');
+<script>
+  function scrollImages(direction, carouselId) {
+    const container = document.getElementById(carouselId);
     const scrollAmount = 320;
 
     if (direction === 'left') {
@@ -204,5 +204,6 @@
     }
   }
 </script>
+
 </body>
 </html>
