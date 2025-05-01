@@ -3,7 +3,11 @@ const components = [
   "why", "testimonials", "map", "blog", "contact", "footer"
 ];
 
-const basePath = location.pathname.includes("campaigns") ? "../../components/" : "components/";
+// Adjust relative path based on folder name
+let basePath = "components/";
+if (location.pathname.includes("/featured/")) {
+  basePath = "../components/";
+}
 
 Promise.all(components.map(id =>
   fetch(`${basePath}${id}.html`)
@@ -17,7 +21,7 @@ Promise.all(components.map(id =>
   if (typeof setupMobileMenu === 'function') setupMobileMenu();
 });
 
-// Menu toggling logic for mobile view
+// Mobile menu setup
 function setupMobileMenu() {
   const toggle = document.getElementById("menuToggle");
   const menu = document.getElementById("mobileMenu");
@@ -26,7 +30,7 @@ function setupMobileMenu() {
     menu?.classList.toggle("hidden");
   });
 
-  // sync both language selectors
+  // Sync language selectors
   const desktopLang = document.getElementById("langSelector");
   const mobileLang = document.getElementById("langSelectorMobile");
 
