@@ -112,6 +112,53 @@ body {
     padding: 0.6rem 1.2rem;
   }
 }
+.image-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.image-carousel::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
+
+.image-carousel img {
+  flex-shrink: 0;
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.arrow {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.arrow.left {
+  position: absolute;
+  left: 0;
+}
+
+.arrow.right {
+  position: absolute;
+  right: 0;
+}
 
 
 
