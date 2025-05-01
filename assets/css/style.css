@@ -45,52 +45,73 @@ body {
 .campaign-cta a:hover {
   text-decoration: underline;
 }
-
 .brabus-banner-link {
-  text-decoration: none;
   display: block;
-}
-.brabus-banner-link {
   text-decoration: none;
   color: inherit;
-  display: block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .brabus-banner-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
 }
 
 .brabus-banner {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
 }
 
-/* Remove overlay styles and use normal layout */
 .banner-text {
-  padding: 1.5rem;
-  background-color: #f9f9f9;
+  padding: 2rem;
   text-align: center;
 }
 
 .banner-text h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
 .banner-text .tagline {
   font-size: 1.1rem;
-  margin: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
-.banner-text .cta {
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: underline;
-  margin-top: 1rem;
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
+
+.cta-button:hover {
+  background-color: #0056cc;
+}
+@media (max-width: 600px) {
+  .banner-text {
+    padding: 1.25rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
 
 
