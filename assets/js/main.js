@@ -17,6 +17,12 @@ Promise.all(components.map(id =>
       if (el) el.innerHTML = html;
     })
 )).then(() => {
+
+  // ✅ Hide elements with class="home-only" if not on homepage
+  if (!location.pathname.endsWith("index.html") && location.pathname !== "/") {
+    document.querySelectorAll(".home-only").forEach(el => el.style.display = "none");
+  }
+
   if (typeof initLanguageSwitcher === 'function') initLanguageSwitcher();
   if (typeof setupMobileMenu === 'function') setupMobileMenu();
 });
