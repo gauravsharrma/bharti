@@ -5,55 +5,24 @@
   <title>Verdana - Dubai Investments Park</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    main {
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #0d2f4f;
-      margin-top: 1em;
-    }
-    section {
-      margin-bottom: 2em;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 1em;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-  </style>
-    <script src="assets/js/main.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
 
   <div id="header"></div>
 
-  <main>
-    <h1>Verdana – Fact Sheet</h1>
+  <main class="px-4 py-8 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-[#0d2f4f] mb-4">Verdana – Fact Sheet</h1>
 
-    <section>
-      <h2>Project Overview</h2>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Project Overview</h2>
       <p>Verdana is located in Dubai Investments Park (DIP), offering high-end residential townhouses surrounded by parks, schools, mosques, and retail. Designed with eco-friendliness in mind, the community features extensive landscaping and sustainable development principles.</p>
     </section>
 
-    <section>
-      <h2>Project Highlights</h2>
-      <ul>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Project Highlights</h2>
+      <ul class="list-disc pl-6">
         <li>Total Units: 305 Four Bedroom Townhouses</li>
         <li>Plot Area: 42,191.55 sq.m.</li>
         <li>Total Height: 13.6 m</li>
@@ -62,9 +31,9 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Amenities & Services</h2>
-      <ul>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Amenities & Services</h2>
+      <ul class="list-disc pl-6">
         <li>Large Swimming Pools for Adults & Kids</li>
         <li>Private Gymnasium</li>
         <li>Private Parking & Entrances</li>
@@ -74,9 +43,9 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Unit Features</h2>
-      <ul>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Unit Features</h2>
+      <ul class="list-disc pl-6">
         <li>All units are 4-bedroom townhouses</li>
         <li>Double Height Living Rooms</li>
         <li>Private Balconies and Terraces</li>
@@ -88,9 +57,9 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Location Advantages</h2>
-      <ul>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Location Advantages</h2>
+      <ul class="list-disc pl-6">
         <li>14 mins to EXPO 2020</li>
         <li>18 mins to Dubai Marina</li>
         <li>20 mins to Palm Jumeirah</li>
@@ -102,41 +71,30 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Unit Sizes</h2>
-      <ul>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Unit Sizes</h2>
+      <ul class="list-disc pl-6">
         <li>External Area: 850–1,427 sq.ft</li>
         <li>Internal Area: 1,922–1,968 sq.ft</li>
         <li>Total Area: 2,772–3,394 sq.ft</li>
         <li>Type A & Type B Available</li>
       </ul>
-      <p><strong>WHERE LIFE IS EVERGREEN</strong></p>
+      <p class="mt-2 font-bold">WHERE LIFE IS EVERGREEN</p>
     </section>
 
     <section>
-      <h2>Gallery</h2>
-      <img src="verdana_page1_img1.jpeg" alt="Verdana Image 1">
-      <img src="verdana_page1_img2.jpeg" alt="Verdana Image 2">
-      <img src="verdana_page2_img1.jpeg" alt="Verdana Image 3">
-      <img src="verdana_page2_img2.jpeg" alt="Verdana Image 4">
-      <img src="verdana_page2_img3.jpeg" alt="Verdana Image 5">
+      <h2 class="text-2xl font-semibold text-[#0d2f4f] mb-4">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <img src="verdana_page1_img1.jpeg" alt="Verdana Image 1" class="rounded-lg shadow-md">
+        <img src="verdana_page1_img2.jpeg" alt="Verdana Image 2" class="rounded-lg shadow-md">
+        <img src="verdana_page2_img1.jpeg" alt="Verdana Image 3" class="rounded-lg shadow-md">
+        <img src="verdana_page2_img2.jpeg" alt="Verdana Image 4" class="rounded-lg shadow-md">
+        <img src="verdana_page2_img3.jpeg" alt="Verdana Image 5" class="rounded-lg shadow-md">
+      </div>
     </section>
   </main>
 
   <div id="footer"></div>
-
-  <!-- Back to Top -->
-  <a href="#" class="fixed bottom-4 left-4 bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-3 py-2 rounded-full shadow-lg text-xs font-semibold z-50">⬆ Back to Top</a>
-
-  <!-- Floating Buttons -->
-  <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-    <a href="tel:+971502295179" class="bg-[#2C2C2C] hover:bg-[#1A1A1A] text-white px-4 py-3 rounded-full shadow-lg text-sm font-semibold flex items-center gap-2">
-      📞 Call
-    </a>
-    <a href="https://wa.me/971502295179" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg text-sm font-semibold flex items-center gap-2">
-      💬 WhatsApp
-    </a>
-  </div>
 
 </body>
 </html>
