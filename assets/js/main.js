@@ -3,11 +3,14 @@ const components = [
   "why", "testimonials", "map", "blog", "contact", "footer"
 ];
 
+const basePath = location.pathname.includes("campaigns") ? "../../components/" : "components/";
+
 Promise.all(components.map(id =>
-  fetch(`components/${id}.html`)
-    .then(res => res.text())
+  fetch(`${basePath}${id}.html`)
+    .then(res => res.ok ? res.text() : '')
     .then(html => {
-      document.getElementById(id).innerHTML = html;
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
     })
 )).then(() => {
   if (typeof initLanguageSwitcher === 'function') initLanguageSwitcher();
