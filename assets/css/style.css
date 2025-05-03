@@ -160,5 +160,15 @@ body {
   right: 0;
 }
 
+.luxury-tagline {
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 
 
