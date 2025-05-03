@@ -1,24 +1,59 @@
 <section class="featured-properties py-16 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold mb-10" data-i18n="featuredHeading">Featured Properties</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+  <h2 class="text-3xl font-bold mb-6" data-i18n="featuredHeading">Featured Properties</h2>
 
-    <!-- Property 1: Verdana -->
+  <!-- Tabs -->
+  <div class="mb-8">
+    <button class="tab-btn active-tab px-4 py-2 text-white bg-blue-600 rounded-md mx-2" onclick="showTab('abu-dhabi')">Abu Dhabi</button>
+    <button class="tab-btn px-4 py-2 text-blue-600 bg-white border border-blue-600 rounded-md mx-2" onclick="showTab('dubai')">Dubai</button>
+  </div>
+
+  <!-- Abu Dhabi Projects -->
+  <div id="abu-dhabi" class="project-tab grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <a href="/featured/marlin-2/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/marlin-2/exterior/CGI-01.webp" alt="Marlin 2 Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">Marlin 2 – Al Reem Island</p>
+    </a>
+    <a href="/featured/the-district/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/the-district/exterior/CGI-01.webp" alt="The District Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">The District – Al Reem Island</p>
+    </a>
+  </div>
+
+  <!-- Dubai Projects -->
+  <div id="dubai" class="project-tab hidden grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
     <a href="/featured/verdana.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/verdana.jpeg" alt="Verdana Dubai property with zero commission" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property1"></p>
+      <img src="/assets/images/verdana.jpeg" alt="Verdana Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800" data-i18n="property1">Verdana</p>
     </a>
-
-    <!-- Property 2: Reportage Hills -->
     <a href="/featured/reportage-hills.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/reportagevillage.jpeg" alt="Reportage Village real estate investment in Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property2"></p>
+      <img src="/assets/images/reportagevillage.jpeg" alt="Reportage Hills Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800" data-i18n="property2">Reportage Hills</p>
     </a>
-
-    <!-- Property 3: Taormina Village -->
     <a href="/featured/taormina-village.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/taormina.jpeg" alt="Taormina Village property for sale in Dubai UAE" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property3"></p>
+      <img src="/assets/images/taormina.jpeg" alt="Taormina Village Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800" data-i18n="property3">Taormina Village</p>
     </a>
-
+    <a href="/featured/royal-park/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/royal-park/exterior/CGI-01.webp" alt="Royal Park Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">Royal Park – Dubai</p>
+    </a>
+    <a href="/featured/vista_3/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/vista_3/exterior/CGI-01.webp" alt="Vista 3 Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">Vista 3 – Dubai</p>
+    </a>
   </div>
 </section>
+
+<script>
+  function showTab(tab) {
+    document.querySelectorAll('.project-tab').forEach(div => div.classList.add('hidden'));
+    document.getElementById(tab).classList.remove('hidden');
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.remove('active-tab', 'bg-blue-600', 'text-white');
+      btn.classList.add('text-blue-600', 'bg-white');
+    });
+    const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tab));
+    activeBtn.classList.add('active-tab', 'bg-blue-600', 'text-white');
+    activeBtn.classList.remove('text-blue-600', 'bg-white');
+  }
+</script>
