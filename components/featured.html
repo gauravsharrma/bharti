@@ -17,18 +17,18 @@
 
     <div id="dubai" class="project-tab">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="../../featured/verdana/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/verdana/exterior/verdana.jpeg" alt="Verdana" class="rounded mb-2">
+        <a href="../../featured/verdana.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/verdana_page1_img1.jpeg" alt="Verdana" class="rounded mb-2">
           <h2 class="text-xl font-semibold">Verdana</h2>
           <p class="text-sm text-gray-600">Dubai</p>
         </a>
-        <a href="../../featured/reportage-hills/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/reportage-hills/exterior/reportagehills.jpeg" alt="Reportage Hills" class="rounded mb-2">
+        <a href="../../featured/reportage-hills.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/reportagehills.jpeg" alt="Reportage Hills" class="rounded mb-2">
           <h2 class="text-xl font-semibold">Reportage Hills</h2>
           <p class="text-sm text-gray-600">Dubai</p>
         </a>
-        <a href="../../featured/taormina-village/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/taormina-village/exterior/taormina.jpeg" alt="Taormina Village" class="rounded mb-2">
+        <a href="../../featured/taormina-village.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/taormina_page1_img5.jpeg" alt="Taormina Village" class="rounded mb-2">
           <h2 class="text-xl font-semibold">Taormina Village</h2>
           <p class="text-sm text-gray-600">Dubai</p>
         </a>
@@ -48,7 +48,7 @@
           <p class="text-sm text-gray-600">Abu Dhabi</p>
         </a>
         <a href="../../featured/royal-park/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/royal-park/exterior/CGI-01.webp" alt="Royal Park" class="rounded mb-2">
+          <img src="../../featured/royal-park/EXTERIORS/CAM02-INTERNAL PATH_PPL.webp" alt="Royal Park" class="rounded mb-2">
           <h2 class="text-xl font-semibold">Royal Park</h2>
           <p class="text-sm text-gray-600">Abu Dhabi</p>
         </a>
@@ -62,7 +62,7 @@
   </div>
 
   <script>
-    window.showTab = function(tabId) {
+    function showTab(tabId) {
       document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
       document.getElementById(tabId).classList.remove('hidden');
 
@@ -76,7 +76,11 @@
         activeBtn.classList.remove('text-blue-600', 'bg-white');
         activeBtn.classList.add('bg-blue-600', 'text-white');
       }
-    };
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      showTab('dubai');
+    });
   </script>
 </body>
 </html>
