@@ -17,6 +17,14 @@
       <img src="/featured/the-district/exterior/CGI-01.webp" alt="The District Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
       <p class="text-lg font-semibold text-gray-800">The District – Al Reem Island</p>
     </a>
+    <a href="/featured/royal-park/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/royal-park/exterior/CGI-01.webp" alt="Royal Park Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">Royal Park – Abu Dhabi</p>
+    </a>
+    <a href="/featured/vista_3/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
+      <img src="/featured/vista_3/exterior/CGI-01.webp" alt="Vista 3 Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
+      <p class="text-lg font-semibold text-gray-800">Vista 3 – Abu Dhabi</p>
+    </a>
   </div>
 
   <!-- Dubai Projects -->
@@ -33,27 +41,24 @@
       <img src="/assets/images/taormina.jpeg" alt="Taormina Village Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
       <p class="text-lg font-semibold text-gray-800" data-i18n="property3">Taormina Village</p>
     </a>
-    <a href="/featured/royal-park/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/royal-park/exterior/CGI-01.webp" alt="Royal Park Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">Royal Park – Dubai</p>
-    </a>
-    <a href="/featured/vista_3/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/vista_3/exterior/CGI-01.webp" alt="Vista 3 Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">Vista 3 – Dubai</p>
-    </a>
   </div>
 </section>
 
+<!-- Place script at end of body for global access -->
 <script>
-  function showTab(tab) {
-    document.querySelectorAll('.project-tab').forEach(div => div.classList.add('hidden'));
-    document.getElementById(tab).classList.remove('hidden');
+  function showTab(tabId) {
+    document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
+    document.getElementById(tabId).classList.remove('hidden');
+
     document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.classList.remove('active-tab', 'bg-blue-600', 'text-white');
+      btn.classList.remove('bg-blue-600', 'text-white');
       btn.classList.add('text-blue-600', 'bg-white');
     });
-    const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tab));
-    activeBtn.classList.add('active-tab', 'bg-blue-600', 'text-white');
-    activeBtn.classList.remove('text-blue-600', 'bg-white');
+
+    const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tabId));
+    if (activeBtn) {
+      activeBtn.classList.remove('text-blue-600', 'bg-white');
+      activeBtn.classList.add('bg-blue-600', 'text-white');
+    }
   }
 </script>
