@@ -1,100 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="UTF-8">
-  <title>Royal Park - Abu Dhabi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Featured Projects</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../../assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-6xl mx-auto py-10 px-4">
+    <h1 class="text-3xl font-bold mb-6">Featured Projects</h1>
 
-  <div id="header"></div>
+    <div class="flex space-x-4 mb-6">
+      <button class="tab-btn bg-blue-600 text-white px-4 py-2 rounded" onclick="showTab('dubai')">Dubai</button>
+      <button class="tab-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded" onclick="showTab('abu-dhabi')">Abu Dhabi</button>
+    </div>
 
-  <main class="px-4 py-8 max-w-6xl mx-auto">
-    <img src="EXTERIORS/CAM10.jpg" alt="Hero Image Royal Park" class="rounded-lg shadow-md w-full h-96 object-cover mb-8">
-
-    <h1 class="text-3xl font-bold text-[#0d2f4f] mb-6">Royal Park – Fact Sheet</h1>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Project Overview</h2>
-      <p>Royal Park is in MASDAR City, Abu Dhabi, offering high-end residential units such as Townhouses, Penthouses, and Apartments. It’s a modern, sustainable community built to the highest standards, surrounded by parks, schools, mosques, and community retails.</p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Project Highlights</h2>
-      <ul class="list-disc pl-6">
-        <li>Total Units: 844</li>
-        <li>45 Four-Bedroom Townhouses (G+2)</li>
-        <li>42 Four-Bedroom Penthouses</li>
-        <li>522 One-Bedroom Apartments</li>
-        <li>170 Two-Bedroom Apartments</li>
-        <li>65 Four-Bedroom Apartments</li>
-        <li>Plot Area: 27,047.38 sq.m.</li>
-        <li>Total Height: 33 m</li>
-        <li>Levels: 2 Basement + Ground + 8 Floors</li>
-        <li>Type: Residential Community (6 clusters)</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Amenities & Services</h2>
-      <ul class="list-disc pl-6">
-        <li>Private Parking for Each Unit</li>
-        <li>Swimming Pools for Adults & Kids</li>
-        <li>Gymnasium</li>
-        <li>Kids Play Areas</li>
-        <li>Shaded Seating Areas, Giant Chess</li>
-        <li>Landscaped & BBQ Areas</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Unit Features</h2>
-      <ul class="list-disc pl-6">
-        <li>Private Balconies & Terraces</li>
-        <li>Built-in Wardrobes</li>
-        <li>Double-Glazed Windows</li>
-        <li>Fully Tiled Bathrooms with Vanity Units</li>
-        <li>Satellite Antenna & Fiber Optic Internet</li>
-        <li>Central A/C</li>
-        <li>Optional Internal Elevator in Townhouses</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f]">Location Advantages</h2>
-      <ul class="list-disc pl-6">
-        <li>2 mins – Masdar Central Park</li>
-        <li>3 mins – Zayed University AI</li>
-        <li>5 mins – Masdar Solar Farm</li>
-        <li>10 mins – Masdar Park & Abu Dhabi Int. Airport</li>
-        <li>12–15 mins – Al Raha Mall, Al Forsan Resort</li>
-        <li>18 mins – Yas Island, Ferrari World</li>
-      </ul>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f] mb-4">Exteriors Gallery</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img src="EXTERIORS/CAM05_.jpg" class="rounded-lg shadow-md" alt="Exterior View 1">
-        <img src="EXTERIORS/CAM10.jpg" class="rounded-lg shadow-md" alt="Exterior View 2">
-        <img src="EXTERIORS/CAM 07 - STREET VIEW-ppl.jpg" class="rounded-lg shadow-md" alt="Exterior View 3">
+    <div id="dubai" class="project-tab">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="../../featured/verdana/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/verdana/exterior/verdana.jpeg" alt="Verdana" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Verdana</h2>
+          <p class="text-sm text-gray-600">Dubai</p>
+        </a>
+        <a href="../../featured/reportage-hills/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/reportage-hills/exterior/reportagehills.jpeg" alt="Reportage Hills" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Reportage Hills</h2>
+          <p class="text-sm text-gray-600">Dubai</p>
+        </a>
+        <a href="../../featured/taormina-village/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/taormina-village/exterior/taormina.jpeg" alt="Taormina Village" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Taormina Village</h2>
+          <p class="text-sm text-gray-600">Dubai</p>
+        </a>
       </div>
-    </section>
+    </div>
 
-    <section class="mb-16">
-      <h2 class="text-2xl font-semibold text-[#0d2f4f] mb-4">Interiors Gallery</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img src="INTERIORS/CAM03-DOUBLE HEIGHT-PPL copy.jpg" class="rounded-lg shadow-md" alt="Interior View 1">
-        <img src="INTERIORS/CAM05-FULL SPACE copy.jpg" class="rounded-lg shadow-md" alt="Interior View 2">
-        <img src="INTERIORS/CAM01-STAIRS-ppl.jpg" class="rounded-lg shadow-md" alt="Interior View 3">
+    <div id="abu-dhabi" class="project-tab hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="../../featured/marlin-2/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/marlin-2/exterior/CGI-01.webp" alt="Marlin 2" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Marlin 2</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+        <a href="../../featured/the-district/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/the-district/exterior/CGI-01.webp" alt="The District" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">The District</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+        <a href="../../featured/royal-park/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/royal-park/EXTERIORS/CAM02-INTERNAL PATH_PPL.webp" alt="Royal Park" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Royal Park</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+        <a href="../../featured/vista_3/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/vista_3/exterior/CGI-01.webp" alt="Vista 3" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Vista 3</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <div id="footer"></div>
+  <script>
+    window.showTab = function(tabId) {
+      document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
 
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('text-blue-600', 'bg-white');
+      });
+
+      const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tabId.includes('dubai') ? 'dubai' : 'abu dhabi'));
+      if (activeBtn) {
+        activeBtn.classList.remove('text-blue-600', 'bg-white');
+        activeBtn.classList.add('bg-blue-600', 'text-white');
+      }
+    };
+  </script>
 </body>
 </html>
