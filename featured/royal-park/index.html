@@ -3,80 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Featured Projects</title>
+  <title>Royal Park</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div class="max-w-6xl mx-auto py-10 px-4">
-    <h1 class="text-3xl font-bold mb-6">Featured Projects</h1>
+    <h1 class="text-3xl font-bold mb-6">Royal Park</h1>
 
-    <div class="flex space-x-4 mb-6">
-      <button class="tab-btn bg-blue-600 text-white px-4 py-2 rounded" onclick="showTab('dubai')">Dubai</button>
-      <button class="tab-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded" onclick="showTab('abu-dhabi')">Abu Dhabi</button>
+    <p class="mb-4 text-lg">Royal Park is a prestigious residential project located in the heart of Abu Dhabi, offering a perfect blend of luxury, comfort, and urban convenience. This development features modern architecture, high-end amenities, and serene surroundings, making it an ideal choice for families and investors alike.</p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4">Exterior Views</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="./EXTERIORS/CAM01-PATHWAY NIGHT MOOD copy.webp" alt="Pathway Night Mood" class="rounded shadow">
+      <img src="./EXTERIORS/CAM02-INTERNAL PATH_PPL.webp" alt="Internal Path" class="rounded shadow">
+      <img src="./EXTERIORS/CAM03-TERRACE VIEW03.webp" alt="Terrace View" class="rounded shadow">
+      <img src="./EXTERIORS/CAM05_.webp" alt="Cam05" class="rounded shadow">
+      <img src="./EXTERIORS/CAM06-CENTRAL PLAZA copy.webp" alt="Central Plaza" class="rounded shadow">
+      <img src="./EXTERIORS/CAM06_Interactive LightMix -ppl.webp" alt="LightMix" class="rounded shadow">
+      <img src="./EXTERIORS/CAM10.webp" alt="Cam10" class="rounded shadow">
+      <img src="./EXTERIORS/CAM11.webp" alt="Cam11" class="rounded shadow">
     </div>
 
-    <div id="dubai" class="project-tab">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="../../featured/verdana/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/verdana/exterior/verdana.jpeg" alt="Verdana" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Verdana</h2>
-          <p class="text-sm text-gray-600">Dubai</p>
-        </a>
-        <a href="../../featured/reportage-hills/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/reportage-hills/exterior/reportagehills.jpeg" alt="Reportage Hills" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Reportage Hills</h2>
-          <p class="text-sm text-gray-600">Dubai</p>
-        </a>
-        <a href="../../featured/taormina-village/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/taormina-village/exterior/taormina.jpeg" alt="Taormina Village" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Taormina Village</h2>
-          <p class="text-sm text-gray-600">Dubai</p>
-        </a>
-      </div>
-    </div>
-
-    <div id="abu-dhabi" class="project-tab hidden">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="../../featured/marlin-2/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/marlin-2/exterior/CGI-01.webp" alt="Marlin 2" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Marlin 2</h2>
-          <p class="text-sm text-gray-600">Abu Dhabi</p>
-        </a>
-        <a href="../../featured/the-district/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/the-district/exterior/CGI-01.webp" alt="The District" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">The District</h2>
-          <p class="text-sm text-gray-600">Abu Dhabi</p>
-        </a>
-        <a href="../../featured/royal-park/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/royal-park/EXTERIORS/CAM02-INTERNAL PATH_PPL.webp" alt="Royal Park" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Royal Park</h2>
-          <p class="text-sm text-gray-600">Abu Dhabi</p>
-        </a>
-        <a href="../../featured/vista_3/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
-          <img src="../../featured/vista_3/exterior/CGI-01.webp" alt="Vista 3" class="rounded mb-2">
-          <h2 class="text-xl font-semibold">Vista 3</h2>
-          <p class="text-sm text-gray-600">Abu Dhabi</p>
-        </a>
-      </div>
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Interior Views</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="./INTERIORS/CAM01-STAIRS-ppl.webp" alt="Stairs" class="rounded shadow">
+      <img src="./INTERIORS/CAM02-RECEPTION.webp" alt="Reception" class="rounded shadow">
+      <img src="./INTERIORS/CAM03-DOUBLE HEIGHT-PPL copy.webp" alt="Double Height" class="rounded shadow">
+      <img src="./INTERIORS/CAM05-FULL SPACE copy.webp" alt="Full Space" class="rounded shadow">
+      <img src="./INTERIORS/CAM09-TERRACE CLOSEUP 2 copy.webp" alt="Terrace Closeup" class="rounded shadow">
     </div>
   </div>
-
-  <script>
-    window.showTab = function(tabId) {
-      document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
-      document.getElementById(tabId).classList.remove('hidden');
-
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('bg-blue-600', 'text-white');
-        btn.classList.add('text-blue-600', 'bg-white');
-      });
-
-      const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tabId.includes('dubai') ? 'dubai' : 'abu dhabi'));
-      if (activeBtn) {
-        activeBtn.classList.remove('text-blue-600', 'bg-white');
-        activeBtn.classList.add('bg-blue-600', 'text-white');
-      }
-    };
-  </script>
 </body>
 </html>
