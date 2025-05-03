@@ -1,64 +1,67 @@
-<section class="featured-properties py-16 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold mb-6" data-i18n="featuredHeading">Featured Properties</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Featured Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-6xl mx-auto py-10 px-4">
+    <h1 class="text-3xl font-bold mb-6">Featured Projects</h1>
 
-  <!-- Tabs -->
-  <div class="mb-8">
-    <button class="tab-btn active-tab px-4 py-2 text-white bg-blue-600 rounded-md mx-2" onclick="showTab('abu-dhabi')">Abu Dhabi</button>
-    <button class="tab-btn px-4 py-2 text-blue-600 bg-white border border-blue-600 rounded-md mx-2" onclick="showTab('dubai')">Dubai</button>
+    <div class="flex space-x-4 mb-6">
+      <button class="tab-btn bg-blue-600 text-white px-4 py-2 rounded" onclick="showTab('dubai')">Dubai</button>
+      <button class="tab-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded" onclick="showTab('abu-dhabi')">Abu Dhabi</button>
+    </div>
+
+    <div id="dubai" class="project-tab">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="../../featured/marlin-2/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/marlin-2/exterior/CGI-01.webp" alt="Marlin 2" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Marlin 2</h2>
+          <p class="text-sm text-gray-600">Dubai</p>
+        </a>
+      </div>
+    </div>
+
+    <div id="abu-dhabi" class="project-tab hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="../../featured/the-district/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/the-district/exterior/CGI-01.webp" alt="The District" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">The District</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+        <a href="../../featured/royal-park/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/royal-park/exterior/CGI-01.webp" alt="Royal Park" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Royal Park</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+        <a href="../../featured/vista_3/index.html" class="block bg-white p-4 rounded shadow hover:shadow-lg">
+          <img src="../../featured/vista_3/exterior/CGI-01.webp" alt="Vista 3" class="rounded mb-2">
+          <h2 class="text-xl font-semibold">Vista 3</h2>
+          <p class="text-sm text-gray-600">Abu Dhabi</p>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <!-- Abu Dhabi Projects -->
-  <div id="abu-dhabi" class="project-tab grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-    <a href="/featured/marlin-2/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/marlin-2/exterior/CGI-01.webp" alt="Marlin 2 Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">Marlin 2 – Al Reem Island</p>
-    </a>
-    <a href="/featured/the-district/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/the-district/exterior/CGI-01.webp" alt="The District Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">The District – Al Reem Island</p>
-    </a>
-    <a href="/featured/royal-park/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/royal-park/exterior/CGI-01.webp" alt="Royal Park Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">Royal Park – Abu Dhabi</p>
-    </a>
-    <a href="/featured/vista_3/index.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/featured/vista_3/exterior/CGI-01.webp" alt="Vista 3 Abu Dhabi" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800">Vista 3 – Abu Dhabi</p>
-    </a>
-  </div>
+  <script>
+    window.showTab = function(tabId) {
+      document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
 
-  <!-- Dubai Projects -->
-  <div id="dubai" class="project-tab hidden grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-    <a href="/featured/verdana.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/verdana.jpeg" alt="Verdana Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property1">Verdana</p>
-    </a>
-    <a href="/featured/reportage-hills.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/reportagevillage.jpeg" alt="Reportage Hills Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property2">Reportage Hills</p>
-    </a>
-    <a href="/featured/taormina-village.html" class="property-card bg-white rounded-lg shadow-md p-4 block hover:shadow-lg transition">
-      <img src="/assets/images/taormina.jpeg" alt="Taormina Village Dubai" class="mb-4 rounded-md w-full h-60 object-cover" />
-      <p class="text-lg font-semibold text-gray-800" data-i18n="property3">Taormina Village</p>
-    </a>
-  </div>
-</section>
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('text-blue-600', 'bg-white');
+      });
 
-<!-- Place script at end of body for global access -->
-<script>
-  function showTab(tabId) {
-    document.querySelectorAll('.project-tab').forEach(tab => tab.classList.add('hidden'));
-    document.getElementById(tabId).classList.remove('hidden');
-
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.classList.remove('bg-blue-600', 'text-white');
-      btn.classList.add('text-blue-600', 'bg-white');
-    });
-
-    const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tabId));
-    if (activeBtn) {
-      activeBtn.classList.remove('text-blue-600', 'bg-white');
-      activeBtn.classList.add('bg-blue-600', 'text-white');
-    }
-  }
-</script>
+      const activeBtn = [...document.querySelectorAll('.tab-btn')].find(btn => btn.textContent.toLowerCase().includes(tabId));
+      if (activeBtn) {
+        activeBtn.classList.remove('text-blue-600', 'bg-white');
+        activeBtn.classList.add('bg-blue-600', 'text-white');
+      }
+    };
+  </script>
+</body>
+</html>
