@@ -10,7 +10,10 @@
     <loc>https://bhartis.netlify.app/index.html</loc>
     <priority>1.00</priority>
   </url>
-
+  <url>
+    <loc>https://bhartis.netlify.app/blog/uae-vs-india-real-estate-investment.html</loc>
+    <priority>0.95</priority>
+  </url>
   <url>
     <loc>https://bhartis.netlify.app/properties.html</loc>
     <priority>0.95</priority>
